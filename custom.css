@@ -1,0 +1,158 @@
+/* Resetten van marges en paddings voor alle elementen */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Basisstijlen voor de body */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* img stijlen */
+img {
+  padding: 10px; 
+  width: 100%;
+  max-width: 300px;
+}
+
+/* Header stijlen */
+header {
+  height: 100px; 
+  background-color: #f57114;
+  color: #fff;
+  padding: 20px; 
+  text-align: center;
+}
+
+/* Nav stijlen */
+nav {
+  background-color: #d15f0e;
+  color: #fff;
+  padding: 10px;
+  text-align: left;
+}
+
+/* Devider stijlen */
+.devider {
+  width: 100%;
+  height: 3px; 
+  background-color: #ffd70d;
+}
+
+/* a stijlen */
+a {
+  color: #fff;
+  padding: 10px; 
+  text-decoration: none;
+  display: block;
+}
+
+/* input stijlen */
+input,
+select,
+textarea {
+  border-radius: 5px;
+  border-width: 1px;
+  height: 40px;
+  border-style: solid;
+  width: 100%;
+  padding: 10px; 
+}
+
+/* Linkerkolom stijlen */
+.left-column {
+  width: 100%; 
+  background-color: #ffb785;
+  padding: 10px; 
+  box-sizing: border-box;
+}
+
+.verzend {
+  background-color: #d15f0e;
+  color: #fff;
+  border: #d15f0e;
+  border-radius: 5px;
+  height: 30px;
+  width: 80px;
+}
+
+/* Hoofdinhoud stijlen */
+.main-content {
+  margin: 0; 
+  padding: 10px; 
+  box-sizing: border-box;
+}
+
+/* article stijlen */
+.article-head {
+  color: #f57114;
+}
+
+/* Footer stijlen */
+footer {
+  clear: both;
+  background-color: #d15f0e;
+  color: #000000;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Media queries */
+@media only screen and (min-width: 768px) {
+  header {
+    height: 150px;
+    padding: 40px;
+  }
+
+  .devider {
+    height: 5px;
+  }
+
+  a {
+    padding: 15px;
+  }
+
+  .left-column {
+    float: left;
+    width: 33.33%;
+    padding: 20px;
+  }
+
+  .main-content {
+    margin-left: 33.33%;
+    padding: 20px;
+  }
+
+  input,
+  select,
+  textarea {
+    padding: 5px;
+  }
+
+/* Nav styles for larger devices */
+nav {
+  text-align: left;
+  display: flex; 
+  justify-content: left;
+  padding: 0; 
+}
+
+a {
+  padding: 10px; 
+  display: inline-block; 
+}
+}
+
+/* Media queries for mobile devices */
+@media only screen and (max-width: 767px) {
+  nav {
+    text-align: center;
+  }
+
+  a {
+    padding: 10px;
+  }
+}
